@@ -1,0 +1,65 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+// variables
+$dark-navy-900: #0f172a;
+$dark-navy-700: #172135;
+$dark-navy-500: #253349;
+$light-blue-200: #38bdf8;
+$light-blue-400: #0ea5e9;
+$main-text-color: #fff;
+$secondary-text-color: #b6bec7;
+$highlight-color: #4185e5;
+$subtle-borders: #334155;
+$font-openSans: "Open Sans", sans-serif;
+$font-mono: "Space Mono", monospace;
+// roles
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 15px;
+}
+img {
+  max-inline-size: 100%;
+}
+h1,
+h2,
+h3 {
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+img {
+  width: 200px;
+}
+// media queries
+@mixin tablet() {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin desktop() {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
