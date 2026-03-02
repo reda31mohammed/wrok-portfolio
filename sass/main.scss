@@ -132,9 +132,11 @@ body {
           line-height: 180%;
           height: 200px;
           overflow-y: auto;
-          scrollbar-width: none;
+          scrollbar-width: 5px;
+
           // margin: 0.5rem 0 0;
-          padding: 0.5rem 0;
+          padding: 0.5rem 0.5rem 0 0;
+
           font-weight: 600;
           border-radius: 8px;
           background: linear-gradient(
