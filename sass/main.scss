@@ -131,7 +131,7 @@ body {
           color: $secondary-text-color;
           line-height: 180%;
           max-height: 200px;
-          overflow: auto;
+          overflow-y: auto;
           scrollbar-width: none;
           // margin: 0.5rem 0 0;
           padding: 0.5rem 0;
