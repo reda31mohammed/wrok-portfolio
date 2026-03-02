@@ -176,8 +176,8 @@ body main .about .text-zone {
 body main .about .text-zone p {
   color: #b6bec7;
   line-height: 180%;
-  max-height: 200px;
-  overflow: auto;
+  height: 200px;
+  overflow-y: auto;
   scrollbar-width: none;
   padding: 0.5rem 0;
   font-weight: 600;
@@ -339,8 +339,8 @@ body main .skills {
 body main .skills .skills-container {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1.5rem;
 }
 body main .skills .skills-container .skill {
   background: #253349;
@@ -349,7 +349,7 @@ body main .skills .skills-container .skill {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.8rem;
   transition: 0.5s;
 }
 body main .skills .skills-container .skill img {
@@ -360,7 +360,7 @@ body main .skills .skills-container .skill p {
   transition: 0.8s;
   letter-spacing: 1.5px;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 8vw - 1rem, 1.2rem);
 }
 body main .skills .skills-container .skill:hover {
   box-shadow: 0 0 1.2rem 0 #0ea5e9;
@@ -391,7 +391,7 @@ body main .contact .links-container .link i {
 }
 body main .contact .links-container .link a {
   color: #0ea5e9;
-  font-size: 1.2rem;
+  font-size: clamp(0.8rem, 8vw - 1rem, 1rem);
   padding-bottom: 0.5rem;
   transition: all 0.5s;
 }
