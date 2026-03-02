@@ -1,6 +1,6 @@
 // fonts
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-// variables
+// Variables
 $dark-navy-900: #0f172a;
 $dark-navy-700: #172135;
 $dark-navy-500: #253349;
@@ -12,8 +12,26 @@ $highlight-color: #4185e5;
 $subtle-borders: #334155;
 $font-openSans: "Open Sans", sans-serif;
 $font-mono: "Space Mono", monospace;
-// roles
-
+// // Avatar styling variables
+$avatar-size: 200px;
+$noggin: calc($avatar-size * 0.25);
+$noggin-height: calc($avatar-size + $noggin);
+$avatar-border: calc($avatar-size * 0.015);
+$mask-size: calc($avatar-size / 2 - $avatar-border);
+$mask-image:
+  linear-gradient(to bottom, orange 0%, orange 50%, transparent 50%),
+  radial-gradient(
+    circle at center center,
+    blue 0%,
+    blue ($mask-size),
+    transparent ($mask-size),
+    transparent 100%
+  );
+$mask-repeat: no-repeat, no-repeat;
+$mask-position:
+  center center,
+  center calc($noggin / 2 + $avatar-border);
+// Roles
 *,
 *::after,
 *::before {
